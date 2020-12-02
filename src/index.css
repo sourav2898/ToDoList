@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,98 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root{
+  width: 100%;
+  height: 100vh;
+  background-color: #33b3ee7e;
+  text-align: center;
+}
+
+.root .container{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  left: 40%;
+  top: 20%;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
+.root .container .header{
+  background-color: turquoise;
+  width: 95%;
+  margin: 10px;
+  color: #fff;
+}
+
+.root .container .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.root .container .list input{
+  border: transparent;
+  border-bottom: 2px solid turquoise;
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+  outline: none;
+}
+
+.root .container .list button{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: turquoise;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.root .container .list button:hover{
+  background-color: greenyellow;
+}
+
+.todo{
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.todo ol li{
+  list-style: none;
+  color: turquoise;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px; 
+}
+
+.todo ol li button{
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: turquoise;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo ol li button:hover{
+  background-color: crimson;
 }
